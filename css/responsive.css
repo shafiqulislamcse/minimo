@@ -1,0 +1,91 @@
+@media all and (max-width: 991px){
+	header .toggle{
+		display: block;
+	}
+
+	header .brand-name{
+		width: 100%;
+		float: none;
+		padding-left: 30px;
+	}
+	header nav{
+		width: 100%;
+		float: none;
+		position: absolute;
+		left: -100%;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s; 
+	}
+	header nav.active{
+		left: 0px;
+	}
+	header nav ul{
+		float: none;
+		background-color: rgba(0,0,0,0.6);
+		margin-top: 30px;
+		padding: 100px 0;
+	}
+	header nav ul li a{
+		display: block;
+		text-align: center;
+		line-height: 50px;
+		color: #fff;
+	}
+	header nav ul li a:hover{
+		color: #fff;
+	}
+	header nav ul li:last-child a{
+		padding-right: 60px;
+	}
+	header nav ul li a:after{
+		margin-top: 0;
+	}
+	header nav ul li:last-child a:after{
+		
+		top:100%;
+		left: 30%;
+		right: 30%;
+		height: 2px;
+		width: 0%;
+	}
+	header nav ul li:last-child a:hover:after{
+		width: 40%;
+	}
+	footer{
+		padding: 30px;
+	}
+
+}
+
+@media all and (max-width: 930px) {
+	.title{
+		font-size: 22px;
+	}
+	.newsletter .newsletter-input{
+		width: 90%;
+	}
+}
+@media all and (max-width: 700px) {
+	.post .post-content .single{
+		width: 100%;
+	}
+	.post .loadmore a{
+		padding: 12px 25px;
+		font-size: 18px;
+	}
+	.newsletter .newsletter-input .form-control{
+		width: 70%;
+	}
+	footer .footer-content .copyright{
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	footer .footer-content .social{
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+}
